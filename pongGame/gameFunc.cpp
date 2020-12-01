@@ -272,6 +272,13 @@ void check_win()
 	}
 }
 
+void destroy()
+{
+	delete ball; 
+	delete paddle1; 
+	delete paddle2;
+	
+}
 
 void run_game()
 {
@@ -290,5 +297,5 @@ void run_game()
 		check_win();
 	}
 	
-	delete ball, paddle1, paddle2;
+	destroy();
 }
